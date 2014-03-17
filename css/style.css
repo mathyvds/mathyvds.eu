@@ -1,0 +1,138 @@
+header {
+	height:120px;
+}
+body {
+	background-image: url('../img/light-grey.png');
+	padding-top: 0px;
+	font-family: 'Roboto', sans-serif;
+}
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: inherit;
+    min-width: 83%;
+    padding-right: 30px;
+    z-index:10;
+}
+img.photo {
+	width: 25%;
+	margin: 0 0 1em 1em;
+	min-width: 100px;
+}
+.thumbnail>a {
+	border-bottom: 0px !important;
+}
+/*.thumbnail>img.site:hover {
+	 opacity: 0.8;
+	 	transition: opacity .5s;
+   -moz-transition: opacity .5s;
+   -webkit-transition: opacity .5s;
+}*/
+img.site {
+	max-width: 100%;
+}
+/*img.site:hover {
+	opacity: 0.8;
+	transition: opacity .5s;
+   -moz-transition: opacity .5s;
+   -webkit-transition: opacity .5s;
+}*/
+.col-xs-offset-1 {
+	margin-left: 4%;
+	margin-right: 4%;
+}
+#success, #error {
+    display:none;
+}
+#success p {
+  background-color:#9bd32d;
+  color: #000;
+  margin-top:6em;
+  z-index:10;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1.1em;
+  width: auto;
+  position:absolute;
+  padding: 10px;
+  margin-left: 15px;
+  margin-right: 40px;
+  bottom: 10%;
+}
+#error p {
+  background-color:#c0392b;
+  color: #000;
+  margin-top:6em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  z-index:10;
+  font-size: 1.1em;
+  width: auto;
+  position:absolute;
+  padding: 10px;
+  margin-left: 15px;
+  margin-right: 40px;
+  bottom: 10%;
+}
+label.error {
+	color:#c0392b;
+	font-weight: normal;
+}
+
+.badge {
+	background-color: #AB616A;
+}
+.navbar-default {
+	background-color: #D09DA3;
+	font-size: 1.1em;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+color: #555;
+background-color: #DCB2B7;
+}
+.navbar-default .navbar-nav>li>a {
+color: #000;
+}
+
+a {
+color: #000;
+border-bottom:1px dotted;
+text-decoration: none;
+}
+
+a:hover, a:focus {
+color: #000;
+border-bottom:1px dotted;
+text-decoration: none;
+}
+a.menu {
+border-bottom:0px;
+}
+a.menu:hover, a.menu:focus {
+border-bottom:0px;
+}
+@media only screen and (max-width:770px) {
+.nav>li {
+width: 30%;
+display: inline-block;
+font-size: 0.9em;
+}
+#nav.affix {
+    width: 100%;
+}
+.navbar-nav {
+float: none;
+}
+.nav>li>a {
+padding: 5px 10px;
+}
+.navbar-collapse {
+padding-right: 0px;
+-webkit-overflow-scrolling: touch;
+}
+}
+@media (min-width: 768px) {}
+.navbar-nav {
+float: none;
+}
+}

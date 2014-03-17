@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <title>Project Website - Mathy</title>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta name="description" content="A website I created to show more information about me and my projects.">
+  <meta name="keywords" content="portfolio, mathy, vandersmissen, curriculum vitae">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon.png">
+  <!-- CSS - Bootstrap core & Custom -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+</head>
+<body data-spy="scroll" data-target=".navbar">
+  <div class="container">
+    <header>
+      <div class="row">
+      <div class="col-sm-10 col-sm-offset-1">
+        <h1 id="home">Mathy Vandersmissen <p class="lead">Portfolio</p></h1>
+      </div>
+      </div>
+    </header>  
+
+    <div id="nav">
+      <div class="navbar navbar-default navbar-static col-sm-10 col-sm-offset-1" role="navigation">
+          <div class="navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#home" class="menu"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+              <li><a href="#projects" class="menu"><span class="glyphicon glyphicon-th-large"></span> Projects</a></li>
+              <li><a href="#contact" class="menu"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="col-xs-offset-1">
+              <h3>Personal Info</h3>
+              <img src="img/mathy.jpg" class="img-rounded photo pull-right">
+              <p>Hello, I'm Mathy. 25 years old, living in Hasselt.</p>
+              <p>I am currently in the process of developing my skills in front-end web development. Particularly HTML5, CSS3 and Javascript, using jquery and bootstrap. All in a responsive design (to fit mobile devices).</p>
+              <p>In the past I studied IT for a year. I also made my own sites using Wordpress and Joomla.
+              Then I took another direction, into music, but the familiarity with coding has always stayed.</p>
+              <p>I am now looking to start my own career in web development, paying attention to clean designs, usability and details.</p>
+              <div id="projects"></div>
+              <p><span class="glyphicon glyphicon-save"></span> <a href="CV.doc">Download my CV</a></a></p>
+              <br />
+              <h3>Projects</h3>
+              <div class="row">
+                <div class="col-sm-12 col-md-4">
+                  <div class="thumbnail">
+                    <img src="img/portfolio.png" class="site" alt="">
+                    <div class="caption">
+                      <h4>Portfolio</h3>
+                      <p>This website was made to showcase the projects I've created.<br /><br /></p>
+                      <p><span class="badge">Bootstrap</span> <span class="badge">Mobile</span> <span class="badge">2013</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="thumbnail">
+                    <a href="/blockparty" target="_blank">
+                      <img src="img/blockparty.png" class="site" alt="">
+                    </a>
+                    <div class="caption">
+                      <h4>Burnout Blockparty</h3>
+                      <p>A website for a showcase festival. It was part of my studies during my music management course.</p>
+                      <p><span class="badge">Wordpress</span> <span class="badge">2013</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="thumbnail">
+                  <a href="/gigo" target="_blank">
+                    <img src="img/gigo.png" class="site" alt="">
+                  </a>
+                    <div class="caption">
+                      <h4>Gigo</h3>
+                      <p>A website to display upcoming gigs in Belgium along with concert and festival news.</p>
+                      <p><span class="badge">Joomla</span> <span class="badge">2012</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-4">
+                  <div class="thumbnail">
+                  <a href="/sinkaship" target="_blank">
+                    <img src="img/sinkaship.png" class="site" alt="">
+                  </a>
+                    <div class="caption">
+                      <h4>Sinkaship 1&2</h3>
+                      <p>Two websites created for two editions of an event.</p>
+                      <p><span class="badge">HTML</span> <span class="badge">2010</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h3 id="contact">Contact</h3>
+              <div class="row">
+                <div class="col-md-5">
+                  <form role="form" id="contact-form" action="contact.php" method="post">
+                    <div class="form-group">
+                      <label for="inputname">Name</label>
+                      <input type="text" class="form-control" id="inputname" name="inputname" placeholder="Enter name">
+                    </div>
+                    <div class="form-group">
+                      <label for="inputemail">Email address</label>
+                      <input type="email" class="form-control" id="inputemail" name="inputemail" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                      <label for="inputtext">Text</label>
+                      <textarea class="form-control" rows="5" id="inputmessage" name="inputtext" placeholder="Enter text"></textarea>
+                    </div>
+                    <input type="hidden" name="contact" value="1" />
+                    <button type="submit" name="send" id="send" class="btn btn-default">Send</button>
+                  </form>
+                </div>
+                  <div id="success">
+                    <p>Your message was successfully sent! I will get in touch as soon as I can.</p>
+                  </div>
+                  <div id="error">
+                    <p>Something went wrong, try refreshing and submitting the form again.</p>
+                  </div>
+              </div>
+              <br />
+              <p>
+                <span class="glyphicon glyphicon-envelope"></span>
+                <script>
+                email=('mathy.vds@' + 'gmail.com')
+                document.write('<a href="mailto:' + email + '">' + email + '</a>')
+                </script>
+              </p>
+              <p><span class="glyphicon glyphicon-earphone"></span> 0475 358 836</p>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Javascript -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/javascript.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
+</body>
+</html>
